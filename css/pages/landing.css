@@ -49,6 +49,8 @@ header {
     width: 202px;
     height: 40px;
     flex-shrink: 0;
+    text-decoration: none;
+    color: inherit;
 }
 
 .logo-icon {
@@ -338,6 +340,8 @@ body.light-mode .theme-icon {
     display: flex;
     align-items: start;
     gap: 8px;
+    color: inherit;
+    text-decoration: none;
 }
 
 .footer-logo .logo-icon {
