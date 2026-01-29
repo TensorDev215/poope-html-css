@@ -1,0 +1,91 @@
+#roadmap {
+    z-index: 5;
+    background-image: url("../../../assets/images/bg-pattern.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.roadmap-inner {
+    padding: 150px 233px 50px 233px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+    position: relative;
+}
+
+.roadmap-inner h2 {
+    font-family: "Mountains of Christmas";
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.roadmap-inner h2 span {
+    color: #FFD258;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px black;
+}
+
+.roadmap-inner p {
+    font-weight: 500;
+    font-size: 24px;
+    list-style: 32px;
+    line-height: 1.5;
+}
+
+.roadmap-phase-list {
+    display: flex;
+    /* justify-content: flex-end; */
+    padding-bottom: 150px;
+    padding-left: 90px;
+    overflow-x: hidden;
+}
+
+.roadmap-phase1 {
+    margin-top: 20px;
+    width: 310px;
+    height: 242px;
+}
+
+.roadmap-phase2 {
+    margin-top: 20px;
+    width: 310px;
+    height: 242px;
+}
+
+.roadmap-phase3 {
+    width: 712px;
+    height: 280px;
+}
+
+@media (max-width: 768px) {
+    .roadmap-inner h2 {
+        font-size: 40px;
+    }
+
+    .roadmap-inner p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .roadmap-inner {
+        padding: 50px 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+        position: relative;
+    }
+
+    .roadmap-phase-list {
+        padding-left: 0px;
+        overflow-x: hidden;
+    }
+}

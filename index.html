@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/pages/landing.css">
     <link rel="stylesheet" href="css/pages/landing/hero.css">
     <link rel="stylesheet" href="css/pages/landing/about.css">
+    <link rel="stylesheet" href="css/pages/landing/tokenomics.css">
+    <link rel="stylesheet" href="css/pages/landing/roadmap.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
 
@@ -18,10 +20,10 @@
 <body>
     <header>
         <div class="container header-inner">
-            <div class="logo">
+            <a href="#" class="logo">
                 <img src="assets/images/logo-header.png" alt="Poope Logo" class="logo-icon">
                 <span class="logo-text">Poope</span>
-            </div>
+            </a>
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
@@ -155,20 +157,47 @@
                 </div>
             </div>
         </section>
-<!--
+
         <section id="tokenomics">
-            <h2>Tokenomics</h2>
-            <p>POOPIE is<br>
-                - 100$ community owned. No dev holding supply.
-            </p>
+            <div class="container tokenomics-inner">
+                <div class="tokenomics-image">
+                    <img src="assets/images/tokenomic.png">
+                </div>
+                <div class="tokenomics-content">
+                    <h2><span>Token</span>omic</h2>
+                    <p>POOPIE is<br>
+                        &nbsp;&bull;&nbsp;100$ community owned. No dev holding<br>
+                        &nbsp;&nbsp;&nbsp;supply.<br>
+                        &nbsp;&bull;&nbsp;LP 100% burnt.<br>
+                        &nbsp;&bull;&nbsp;989 million $sc supply<br>
+                        &nbsp;&bull;&nbsp;100% released in circulation<br>
+                    </p>
+                    <div class="about-buttons">
+                        <button class="btn btn-buy-poope"><span>buy poope</span><img src="assets/images/svg/arrow-down-right.svg" class="connect-icon"></button>
+                    </div>   
+                </div>
+                <div class="tokenomics-coin">
+                    <img src="assets/images/coin2.png">
+                </div>
+            </div>
         </section>
 
         <section id="roadmap">
-            <h2>OUR ROADMAP</h2>
-            <p>This roadmap outlines our journey to exciting milestones, including listings on major 
-                exchanges. Let's pave the way for innovative developments.</p>
-        </section>
+            <div class="container">
+                <div class="roadmap-inner">
+                    <h2>our <span>roadmap</span></h2>
+                    <p>This roadmap outlines our journey to exciting milestones, including listings on major 
+                        exchanges. Let's pave the way for innovative developments.</p>
+                </div>
 
+                <div class="roadmap-phase-list">
+                    <img src="assets/images/Phase.png" alt="Phase 1" class="roadmap-phase1">
+                    <img src="assets/images/Phase1.png" alt="Phase 2" class="roadmap-phase2">
+                    <img src="assets/images/Phase2.png" alt="Phase 3" class="roadmap-phase3">
+                </div> 
+            </div>
+        </section>
+<!--
         <section id="faq">
             <h2>FIND OUT MORE</h2>
         </section>
@@ -183,10 +212,10 @@
     <footer id="footer" class="container">
         <div class="footer-content">
             <div class="footer-summary">
-                <div class="footer-logo">
+                <a href="#" class="footer-logo">
                     <img src="assets/images/footer-logo.png" alt="Poope Logo" class="logo-icon">
                     <span class="logo-text">Poope</span>
-                </div>
+                </a>
                 <p>Every bathroom break becomes a bullseye moment to 
                     embrace your inner marksman. Nail that tight
                     deadline, blast through the crypto world.</p>
