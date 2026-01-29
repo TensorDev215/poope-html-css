@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/component.css">
     <link rel="stylesheet" href="css/pages/landing.css">
+    <link rel="stylesheet" href="css/pages/landing/hero.css">
+    <link rel="stylesheet" href="css/pages/landing/about.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
 
@@ -79,64 +81,81 @@
 
 
     <main>
-        <section id="hero" class="container">
-            <h1 class="text-poope">POOPE</h1>
-            <h1 class="text-solana">SOLANA</h1>
-            <p class="text-content">Every bathroom break becomes a bullseye moment to embrace your inner 
-                marksman. Nail that tight deadline, blast through the crypto world.</p>
-            <div class="mouse-icon">
-                <a href="#footer"><img src="assets/images/svg/mouse.svg" alt="Mouse Icon"></a>
-            </div>
-            <div class="arrow-down-icon">
-                <img src="assets/images/svg/arrow-down.svg" width="20px" height="20px" alt="Arrow down Icon">
-            </div>
+        <section id="hero">
+            <div class="hero-inner container">
+                <h1 class="text-poope">poope</h1>
+                <h1 class="text-solana">solana</h1>
+                <p class="text-content">Every bathroom break becomes a bullseye moment to embrace your inner 
+                    marksman. Nail that tight deadline, blast through the crypto world.</p>
+                <div class="mouse-icon">
+                    <a href="#footer"><img src="assets/images/svg/mouse.svg" alt="Mouse Icon"></a>
+                </div>
+                <div class="arrow-down-icon">
+                    <img src="assets/images/svg/arrow-down.svg" width="20px" height="20px" alt="Arrow down Icon">
+                </div>
 
-            <div class="star1">
-                <img src="assets/images/svg/star1.svg" class="star-dark">
-                <img src="assets/images/svg/star1-white.svg" class="star-light">
-            </div>
-            <div class="star2">
-                <img src="assets/images/svg/star2.svg" class="star-dark">
-                <img src="assets/images/svg/star2-white.svg" class="star-light">
-            </div>
-            <div class="star3">
-                <img src="assets/images/svg/star1.svg" class="star-dark">
-                <img src="assets/images/svg/star1-white.svg" class="star-light">
-            </div>
-            <div class="star4">
-                <img src="assets/images/svg/star2.svg" class="star-dark">
-                <img src="assets/images/svg/star2-white.svg" class="star-light">
-            </div>
-            <div class="cloud1">
-                <img src="assets/images/cloud.png">
-            </div>
-            <div class="cloud2">
-                <img src="assets/images/cloud.png">
-            </div>
-            <div class="cloud3">
-                <img src="assets/images/cloud.png">
-            </div>
+                <div class="star1">
+                    <img src="assets/images/svg/star1.svg" class="star-dark">
+                    <img src="assets/images/svg/star1-white.svg" class="star-light">
+                </div>
+                <div class="star2">
+                    <img src="assets/images/svg/star2.svg" class="star-dark">
+                    <img src="assets/images/svg/star2-white.svg" class="star-light">
+                </div>
+                <div class="star3">
+                    <img src="assets/images/svg/star1.svg" class="star-dark">
+                    <img src="assets/images/svg/star1-white.svg" class="star-light">
+                </div>
+                <div class="star4">
+                    <img src="assets/images/svg/star2.svg" class="star-dark">
+                    <img src="assets/images/svg/star2-white.svg" class="star-light">
+                </div>
+                <div class="cloud1">
+                    <img src="assets/images/cloud.png">
+                </div>
+                <div class="cloud2">
+                    <img src="assets/images/cloud.png">
+                </div>
+                <div class="cloud3">
+                    <img src="assets/images/cloud.png">
+                </div>
 
-            <div class="logo-poope">
-                <img src="assets/images/logo-poope.png" alt="Poope Logo">
+                <div class="logo-poope">
+                    <img src="assets/images/logo-poope.png" alt="Poope Logo">
+                </div>
             </div>
         </section>
-    </main>
 
-        <!-- <section id="about">
-            <h2>About POOPECOIN</h2>
-            <p>$POOPE isn't just a Poop. An open-source peer-to-peer 
-                digital currency, favoured on Solona Network
-                worldwide.
-
-                At its heart, POOPECOIN is the accidental crypto
-                movement that makes people smile and its amazing,
-                vibrant community made up of friendly folks just like
-                you! Together, we will flush to a 1 billion market cap.
-                Plup down, flush up!
-            </p>
+        <section id="about">
+            <div class="about-inner container">
+                <div class="about-content">
+                    <h2>About <span>POOPECOIN</span></h2>
+                    <div class="about-text">
+                        <p>
+                            $POOPE isn't just a Poop. An open-source peer-to-peer 
+                            digital currency, favoured on Solona Network
+                            worldwide.
+                        </p>
+                        <p>
+                            At its heart, POOPECOIN is the accidental crypto
+                            movement that makes people smile and its amazing,
+                            vibrant community made up of friendly folks just like
+                            you! Together, we will flush to a 1 billion market cap.
+                            Plup down, flush up!
+                        </p>
+                    </div>
+                    
+                    <div class="about-buttons">
+                        <button class="btn btn-buy-poope"><span>buy poope</span><img src="assets/images/svg/arrow-down-right.svg" class="connect-icon"></button>
+                        <button class="btn btn-read-more"><span>read more</span><img src="assets/images/svg/arrow-up-right.svg" class="connect-icon"></button>
+                    </div>
+                </div>
+                <div class="about-logo">
+                    <img src="assets/images/toilet-open.png" alt="Poope Logo">
+                </div>
+            </div>
         </section>
-
+<!--
         <section id="tokenomics">
             <h2>Tokenomics</h2>
             <p>POOPIE is<br>
@@ -157,6 +176,9 @@
         <section id="community">
             <h2>STAY UPDATED</h2>
         </section> -->
+    </main>
+
+        
  
     <footer id="footer" class="container">
         <div class="footer-content">
@@ -208,6 +230,7 @@
         document.getElementsByTagName('header')[0].style.zIndex = '50';
         console.log('Sidebar opened');
     }
+
     function closeSidebar() {
         document.querySelector('.sidebar-menu').style.display = 'none';
     }
