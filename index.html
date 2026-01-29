@@ -20,14 +20,14 @@
                 <img src="assets/images/logo-header.png" alt="Poope Logo" class="logo-icon">
                 <span class="logo-text">Poope</span>
             </div>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#tokenomics">Tokenomics</a></li>
-                    <li><a href="#roadmap">Roadmap</a></li>
-                    <li><a href="#community">Community</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#" class="language-selector">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#tokenomics" class="nav-link">Tokenomics</a></li>
+                    <li class="nav-item"><a href="#roadmap" class="nav-link">Roadmap</a></li>
+                    <li class="nav-item"><a href="#community" class="nav-link">Community</a></li>
+                    <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li class="nav-item"><a href="#" class="language-selector">
                         <img src="assets/images/flag-round.png" class="flag-icon">
                         EN
                         <img src="assets/images/svg/angle-small-down.svg" class="flag-icon">
@@ -35,7 +35,7 @@
                 </ul>
             </nav>
             <div class="header-buttons">
-                <button class="btn btn-theme"><img src="assets/images/svg/sun.svg" class="theme-icon"></button>
+                <button class="btn btn-theme" onclick="selectTheme()"><img src="assets/images/svg/sun.svg" class="theme-icon"></button>
                 <button class="btn btn-connect"><img src="assets/images/svg/wallet-svgrepo-com.svg" class="connect-icon"><span>CONNECT</span></button>
                 
                 <button class="btn menu-toggle" onclick="openSidebar()"><img src="assets/images/svg/menu-burger.svg" class="burger-icon"></button>
@@ -56,14 +56,14 @@
             </div>
         </div>
         
-        <nav class="sidebar-nav-menu">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#tokenomics">Tokenomics</a></li>
-                <li><a href="#roadmap">Roadmap</a></li>
-                <li><a href="#community">Community</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#">
+        <nav class="sidebar-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#tokenomics">Tokenomics</a></li>
+                <li class="nav-item"><a href="#roadmap">Roadmap</a></li>
+                <li class="nav-item"><a href="#community">Community</a></li>
+                <li class="nav-item"><a href="#faq">FAQ</a></li>
+                <li class="nav-item"><a href="#">
                     <img src="assets/images/flag-round.png" class="flag-icon">
                     EN
                     <img src="assets/images/svg/angle-small-down.svg" class="flag-icon">
@@ -92,16 +92,20 @@
             </div>
 
             <div class="star1">
-                <img src="assets/images/svg/star1.svg">
+                <img src="assets/images/svg/star1.svg" class="star-dark">
+                <img src="assets/images/svg/star1-white.svg" class="star-light">
             </div>
             <div class="star2">
-                <img src="assets/images/svg/star2.svg">
+                <img src="assets/images/svg/star2.svg" class="star-dark">
+                <img src="assets/images/svg/star2-white.svg" class="star-light">
             </div>
             <div class="star3">
-                <img src="assets/images/svg/star1.svg">
+                <img src="assets/images/svg/star1.svg" class="star-dark">
+                <img src="assets/images/svg/star1-white.svg" class="star-light">
             </div>
             <div class="star4">
-                <img src="assets/images/svg/star2.svg">
+                <img src="assets/images/svg/star2.svg" class="star-dark">
+                <img src="assets/images/svg/star2-white.svg" class="star-light">
             </div>
             <div class="cloud1">
                 <img src="assets/images/cloud.png">
@@ -183,7 +187,7 @@
         <hr>
         <div class="footer-bottom">
             <p class="footer-bottom-sign">&copy; Poope 2024</p>
-            <nav class="footer-nav-menu">
+            <nav class="footer-nav">
                     <a>Privacy Policy</a>
                     <a>Terms & Conditions</a>
                     <a class="language-selector">
@@ -206,6 +210,11 @@
     }
     function closeSidebar() {
         document.querySelector('.sidebar-menu').style.display = 'none';
+    }
+
+    function selectTheme() {
+        var element = document.body;
+        element.classList.toggle("light-mode");
     }
 </script>
 </body>
