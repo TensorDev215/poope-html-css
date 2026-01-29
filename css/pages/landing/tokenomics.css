@@ -1,0 +1,153 @@
+#tokenomics {
+    background-color: #191919;
+    height: 768px;
+}
+
+body.light-mode #tokenomics {
+    background-color: #EED6B7;
+}
+
+.tokenomics-inner {
+    padding: 150px;
+    display: flex;
+    position: relative;
+}
+
+.tokenomics-content {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tokenomics-content h2 {
+    font-family: "Mountains of Christmas";
+    font-weight: 700;
+    font-style: bold;
+    font-size: 80px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.tokenomics-content h2 span {
+    color: #FFD258;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px black;
+}
+
+.tokenomics-content p {
+    font-weight: 500;
+    font-size: 24px;
+    list-style: 32px;
+    line-height: 1.5;
+}
+
+.tokenomics-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.tokenomics-image img {
+    width: 800px;
+    height: 840px;
+}
+
+.tokenomics-coin {
+    position: absolute;
+    top: 610px;
+    right: 71px;
+}
+
+.tokenomics-coin img {
+    width: 159.71px;
+    height: 177.09px;
+    filter: drop-shadow(0px 0px 50px rgba(255, 255, 255, 1.0));
+}
+
+
+@media (max-width: 1296px) {
+    .tokenomics-inner {
+        padding-top: 50px;
+        padding-right: 20px;
+        padding-left: 20px;
+        display: flex;
+        position: relative;
+    }
+
+    .tokenomics-content {
+        gap: 24px;
+    }
+
+    .tokenomics-content h2 {
+        font-size: 40px;
+    }
+
+    .tokenomics-content p {
+        font-size: 16px;
+        list-style: 24px;
+    }
+
+    .tokenomics-image {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    
+    }
+
+    .tokenomics-image img {
+        width: 375px;
+        height: 400px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .tokenomics-inner {
+        padding-top: 50px;
+        padding-right: 20px;
+        padding-left: 20px;
+        display: flex;
+        position: relative;
+    }
+
+    .tokenomics-content {
+        gap: 24px;
+    }
+
+    .tokenomics-content h2 {
+        font-size: 40px;
+    }
+
+    .tokenomics-content p {
+        font-size: 16px;
+        list-style: 24px;
+    }
+
+    .tokenomics-image {
+        position: absolute;
+        top: 410px;
+        left: 0px;
+    }
+
+    .tokenomics-image img {
+        width: 335px;
+        height: 350px;
+    }
+
+    .tokenomics-coin {
+        position: absolute;
+        top: 750px;
+        right: 20px;
+    }
+
+    .tokenomics-coin img {
+        width: 72px;
+        height: 80px;
+        filter: drop-shadow(0px 0px 50px rgba(255, 255, 255, 1.0));
+    }
+}
