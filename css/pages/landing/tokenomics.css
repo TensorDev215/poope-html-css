@@ -20,31 +20,6 @@ body.light-mode #tokenomics {
     gap: 30px;
 }
 
-.tokenomics-content h2 {
-    font-family: "Mountains of Christmas";
-    font-weight: 700;
-    font-style: bold;
-    font-size: 80px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    text-transform: uppercase;
-    margin-top: 0px;
-    margin-bottom: 5px;
-}
-
-.tokenomics-content h2 span {
-    color: #FFD258;
-    text-transform: uppercase;
-    -webkit-text-stroke: 1px black;
-}
-
-.tokenomics-content p {
-    font-weight: 500;
-    font-size: 24px;
-    list-style: 32px;
-    line-height: 1.5;
-}
 
 .tokenomics-image {
     position: absolute;

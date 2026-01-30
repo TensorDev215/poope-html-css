@@ -22,6 +22,9 @@ body {
     box-sizing: border-box;
 }
 
+body.light-mode .sidebar-menu { background-color: #EED6B7; }
+body.light-mode .nav-item a { color: #141414; }
+
 header {
     position: fixed;
     top: 0;
