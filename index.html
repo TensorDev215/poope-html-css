@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/pages/landing/about.css">
     <link rel="stylesheet" href="css/pages/landing/tokenomics.css">
     <link rel="stylesheet" href="css/pages/landing/roadmap.css">
+    <link rel="stylesheet" href="css/pages/landing/faq.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
 
@@ -34,7 +35,7 @@
                     <li class="nav-item"><a href="#" class="language-selector">
                         <img src="assets/images/flag-round.png" class="flag-icon">
                         EN
-                        <img src="assets/images/svg/angle-small-down.svg" class="flag-icon">
+                        <img src="assets/images/svg/angle-small-down.svg" class="flag-icon faq-icon">
                     </a></li>
                 </ul>
             </nav>
@@ -131,7 +132,7 @@
         <section id="about">
             <div class="about-inner container">
                 <div class="about-content">
-                    <h2>About <span>POOPECOIN</span></h2>
+                    <h2>About<span> poopecoin</span></h2>
                     <div class="about-text">
                         <p>
                             $POOPE isn't just a Poop. An open-source peer-to-peer 
@@ -197,11 +198,38 @@
                 </div> 
             </div>
         </section>
-<!--
-        <section id="faq">
-            <h2>FIND OUT MORE</h2>
-        </section>
 
+        <section id="faq">
+            <div class="container faq-inner">
+                <div class="faq-title">
+                    <h2>find out <span>more</span></h2>
+                    <div class="faq-view-more">
+                        <p>Didn't find what you looking for?</p>
+                        <button class="btn view-more-btn">View More</button>
+                    </div>
+                    <div class="faq-content">
+                        <div class="faq-button-group">
+                            <button class="faq-button first-button original-button">Frequently Asked Questions</button>
+                            <button class="faq-button second-button"><span>Frequently Asked...</span><img src="assets/images/svg/angle-small-down-black.svg"></button>
+                            <button class="faq-button first-button">Resources</button>
+                            <button class="faq-button first-button">How to's</button>
+                            <button class="faq-button first-button">Documentation</button>
+                        </div>
+                        <div class="faq-group">
+                            <div class="faq-item"><span>A hale holds nearly 30% of Poope Coin supply! Is this true?</span><img src="assets/images/svg/angle-small-down.svg" class="faq-icon"></div>
+                            <div class="faq-item"><span>Can you put a cap on Poope Coin?</span><img src="assets/images/svg/angle-small-down.svg" class="faq-icon"></div>
+                            <div class="faq-item"><span>Poope Coin has no developers!</span><img src="assets/images/svg/angle-small-down.svg" class="faq-icon"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-sheet">
+                    <img src="assets/images/sheet.png" alt="Hand sheet">
+                </div>
+            </div>
+
+        </section>
+<!--
         <section id="community">
             <h2>STAY UPDATED</h2>
         </section> -->
@@ -265,8 +293,14 @@
     }
 
     function selectTheme() {
-        var element = document.body;
-        element.classList.toggle("light-mode");
+        const body = document.body;
+        const isLight = body.classList.toggle("light-mode");
+
+        document.querySelectorAll(".faq-icon").forEach(icon => {
+            icon.src = isLight
+            ? "assets/images/svg/angle-small-down-black.svg"
+            : "assets/images/svg/angle-small-down.svg";
+        });
     }
 </script>
 </body>
