@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/pages/landing/tokenomics.css">
     <link rel="stylesheet" href="css/pages/landing/roadmap.css">
     <link rel="stylesheet" href="css/pages/landing/faq.css">
+    <link rel="stylesheet" href="css/pages/landing/stay.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
 
@@ -229,10 +230,46 @@
             </div>
 
         </section>
-<!--
-        <section id="community">
-            <h2>STAY UPDATED</h2>
-        </section> -->
+
+        <section id="stay">
+            <div class="container stay-inner">
+                <div class="stay-title">
+                    <h2>stay <span>updated</span></h2>
+                </div>
+                <div class="blog-list">
+                    <div class="blog-item">
+                        <img src="assets/images/findout-utility.png" class="blog-img">
+                        <h3 class="blog-title">Poope Coin has no utility!</h3>
+                        <p class="blog-content">
+                            Oh yes it does, and it always has! The simple
+                            fact is that money has utility - and Poo is
+                            money! Indeed, Poopecoin is one of the few...
+                        </p>
+                        <button class="blog-button">Read more<img src="assets/images/svg/angle-small-right.svg"  class="blog-button-img"></button>
+                    </div>
+                    <div class="blog-item">
+                        <img src="assets/images/findout-info.png" class="blog-img">
+                        <h3 class="blog-title">Poope Coin has no utility!</h3>
+                        <p class="blog-content">
+                            Oh yes it does, and it always has! The simple
+                            fact is that money has utility - and Poo is
+                            money! Indeed, Poopecoin is one of the few...
+                        </p>
+                        <button class="blog-button">Read more<img src="assets/images/svg/angle-small-right.svg"  class="blog-button-img"></button>
+                    </div>
+                    <div class="blog-item">
+                        <img src="assets/images/findout-collect.png" class="blog-img">
+                        <h3 class="blog-title">Poope Coin has no utility!</h3>
+                        <p class="blog-content">
+                            Oh yes it does, and it always has! The simple
+                            fact is that money has utility - and Poo is
+                            money! Indeed, Poopecoin is one of the few...
+                        </p>
+                        <button class="blog-button">Read more<img src="assets/images/svg/angle-small-right.svg" class="blog-button-img"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
         
@@ -300,6 +337,14 @@
             icon.src = isLight
             ? "assets/images/svg/angle-small-down-black.svg"
             : "assets/images/svg/angle-small-down.svg";
+        });
+
+        const iconSrc = isLight
+            ? "assets/images/svg/angle-small-right-black.svg"
+            : "assets/images/svg/angle-small-right.svg";
+
+        document.querySelectorAll(".blog-button-img").forEach(img => {
+            img.src = iconSrc;
         });
     }
 </script>
