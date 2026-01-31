@@ -77,15 +77,23 @@
 }
 
 .first-button {
-    background-color: #FFD258;
-    color:black;
+    background-color: #191919;
     border-color: white;
     display: block;
+    color: white;
 }
 
+
+
+
 .original-button {
+    background-color: #FFD258;
     width: 393px;
+    color: black;
 }
+
+
+
 
 .second-button {
     background-color: #FFD258;
@@ -131,13 +139,18 @@
 }
 
 .faq-sheet img {
-    width: 348.55px;
-    height: 506.53px;
+    width: 290.55px;
+    height: 450.53px;
 }
 
 @media (max-width: 1375px) {
     .faq-inner {
         padding: 50px 20px;
+    }
+
+    .faq-sheet img {
+        width: 146px;
+        height: 212px;
     }
 }
 
@@ -205,8 +218,8 @@
 body.light-mode .faq-view-more p { color: black; }
 body.light-mode .view-more-btn { color: black; background-color: white; }
 body.light-mode .faq-button { border-color: black; }
-body.light-mode .first-button { background-color: white; }
-body.light-mode .orginal-button { background-color: #FFD258; }
+body.light-mode .first-button { background-color: white; color: black;}
+body.light-mode .original-button { background-color: #FFD258; }
 body.light-mode .faq-item { border-color: rgba(20, 20, 20, 0.4); }
 
 @media (max-width: 375px) {
